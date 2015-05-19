@@ -64,7 +64,7 @@ public class Convection {
 		double theta = Math.atan(x / y); // angular coordinate
 		assert r <= Math.sqrt(Math.pow(xMax / 2, 2) + Math.pow(xMax / 2, 2));
 
-		// calculate the velocity based on flow equation
+		// calculate the velocity based on a flow equation
 		double velocity = gradient * (Math.pow(R, 3) * g * beta * rho)
 				/ (4 * eta) * (r / R) * (1 - Math.pow((r / R), 2))
 				* Math.cos(theta);
