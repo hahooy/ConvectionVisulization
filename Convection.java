@@ -3,8 +3,8 @@
  *  Execution:    java Convection
  *  Dependencies: Picture.java                
  *
- *  Visualization of convective flow in a cylinder induced 
- *  by horizontal temperature gradient. This aids examining
+ *  Visualization of convective flow in a cylinder induced by 
+ *  horizontal temperature gradient. This aids in examining 
  *  the thermal convection effect in electrophoretic NMR 
  *  experiments. 
  *
@@ -21,7 +21,7 @@ public class Convection {
 		// initialize plot parameters
 		final int SIZE = 1600; // size of the image
 		final double xMax = 4E-3; // maximum x value of the plot
-		final double zMax = 1.17E-4; // maximum z value of the plot
+		final double zMax = 1.3E-4; // maximum z value of the plot
 		double maxV = 0.0; // maximum vertical flow velocity
 		Picture image = new Picture(SIZE, SIZE);
 
@@ -38,7 +38,7 @@ public class Convection {
 		}
 
 		System.out.println(maxV);
-		image.save("/Users/hahooy1/Desktop/flow.png");
+		//image.save("/Users/hahooy1/Desktop/flow.png");
 		image.show();
 	}
 
